@@ -11,8 +11,6 @@ import plotly.express as px
 df = pd.read_csv("C:\\Users\Ruth's PC\OneDrive\Documents\Essex\Second Year\CE201-5-FY Team Project\Individual Project\ExamResults1.csv")
 
 
-fig = px.scatter(df, x="Average", y="CSE101")
-
-
+fig = px.scatter(df, x="Average", y="CSE101",trendline="ols")
 
 fig.show()
